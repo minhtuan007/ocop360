@@ -1,0 +1,175 @@
+/* ======= RESET ======= */
+
+
+.bahiana-regular {
+  font-family: "Bahiana", sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border: none;
+  outline: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* ======= LAYOUT ======= */
+
+.wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ----- Vùng bên trái chứa nội dung ----- */
+.mainContent {
+  position: relative;
+  width: 45%;
+  background-color: white;
+  padding: 80px 0px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+/* Đường kẻ ngang */
+.navBar {
+  height: 1px;
+  background: #333;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+/* Văn bản */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 2;
+}
+
+#p1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  width: aoto;
+  align-items: center;
+  font-family: 'bahiana-regular', sans-serif;
+}
+
+.title h1 {
+  font-size: 70px;
+  color: #099;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.title img {
+  width: 90px;
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+    transform: translateY(0%);
+
+}
+
+/* Link trang */
+a[href*="ocoptour360"] {
+  /* font-weight: bold; */
+  letter-spacing: 3px;
+  color: black;
+  position: relative;
+}
+
+a[href*="ocoptour360"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 45%;
+  height: 15px;
+  background-color: #099;
+  z-index: -1;
+}
+
+/* ======= ẢNH WAVE PHỦ CẠNH PHẢI ======= */
+.boundary {
+  position: relative;
+  top: 0;
+  width: auto;
+  height: 100vh;
+  pointer-events: none; /* tránh ảnh block nội dung */
+}
+
+.boundary img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======= ẢNH NỀN PHẢI (ruộng lúa) ======= */
+.image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 30%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+  color: #099;
+  display: inline-block;       
+  transition: transform 0.3s ease;
+  font-family: "Bahianita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+
+.menu a:hover {
+  transform: scale(1.25);       /* to ra 5% */
+}
